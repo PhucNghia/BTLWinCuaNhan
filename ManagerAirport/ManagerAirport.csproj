@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,13 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BULs\AircraftsBUL.cs" />
+    <Compile Include="BULs\AirportsBUL.cs" />
+    <Compile Include="BULs\RoutesBUL.cs" />
+    <Compile Include="BULs\SchedulesBUL.cs" />
+    <Compile Include="DALs\AircraftDAL.cs" />
+    <Compile Include="DALs\AirportsDAL.cs" />
+    <Compile Include="DALs\RootDALs.cs" />
+    <Compile Include="DALs\RoutesDAL.cs" />
+    <Compile Include="DALs\SchedulesDAL.cs" />
     <Compile Include="DTOs\AircraftDTO.cs" />
-    <Compile Include="DTOs\CountriesDTO.cs" />
-    <Compile Include="DTOs\RolesDTO.cs" />
-    <Compile Include="DTOs\RoutersDTO.cs" />
+    <Compile Include="DTOs\RoutesDTO.cs" />
+    <Compile Include="DTOs\ScheduleManagersDTO.cs" />
     <Compile Include="DTOs\SchedulesDTO.cs" />
     <Compile Include="DTOs\AirportsDTO.cs" />
-    <Compile Include="DTOs\UsersDTO.cs" />
     <Compile Include="GUI\frmApplyScheduleChanges.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,7 +79,6 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTOs\OfficesDTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmApplyScheduleChanges.resx">
@@ -106,8 +113,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BULs\" />
-    <Folder Include="DALs\" />
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

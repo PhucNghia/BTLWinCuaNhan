@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.grboxFlightRoute = new System.Windows.Forms.GroupBox();
-            this.lblAircraft = new System.Windows.Forms.Label();
-            this.lblTo = new System.Windows.Forms.Label();
-            this.lblFrom = new System.Windows.Forms.Label();
+            this.txtAircraft = new System.Windows.Forms.TextBox();
+            this.cbbTo = new System.Windows.Forms.ComboBox();
+            this.cbbFrom = new System.Windows.Forms.ComboBox();
             this.lbl3 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
@@ -40,76 +40,80 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.txtEconomyPrice = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpTime = new System.Windows.Forms.DateTimePicker();
             this.grboxFlightRoute.SuspendLayout();
             this.SuspendLayout();
             // 
             // grboxFlightRoute
             // 
-            this.grboxFlightRoute.Controls.Add(this.lblAircraft);
-            this.grboxFlightRoute.Controls.Add(this.lblTo);
-            this.grboxFlightRoute.Controls.Add(this.lblFrom);
+            this.grboxFlightRoute.Controls.Add(this.txtAircraft);
+            this.grboxFlightRoute.Controls.Add(this.cbbTo);
+            this.grboxFlightRoute.Controls.Add(this.cbbFrom);
             this.grboxFlightRoute.Controls.Add(this.lbl3);
             this.grboxFlightRoute.Controls.Add(this.lbl2);
             this.grboxFlightRoute.Controls.Add(this.lbl1);
             this.grboxFlightRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grboxFlightRoute.Location = new System.Drawing.Point(58, 47);
+            this.grboxFlightRoute.Location = new System.Drawing.Point(77, 58);
+            this.grboxFlightRoute.Margin = new System.Windows.Forms.Padding(4);
             this.grboxFlightRoute.Name = "grboxFlightRoute";
-            this.grboxFlightRoute.Size = new System.Drawing.Size(576, 82);
+            this.grboxFlightRoute.Padding = new System.Windows.Forms.Padding(4);
+            this.grboxFlightRoute.Size = new System.Drawing.Size(768, 101);
             this.grboxFlightRoute.TabIndex = 0;
             this.grboxFlightRoute.TabStop = false;
             this.grboxFlightRoute.Text = "Flight route";
             // 
-            // lblAircraft
+            // txtAircraft
             // 
-            this.lblAircraft.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblAircraft.Location = new System.Drawing.Point(452, 31);
-            this.lblAircraft.Name = "lblAircraft";
-            this.lblAircraft.Size = new System.Drawing.Size(77, 26);
-            this.lblAircraft.TabIndex = 5;
+            this.txtAircraft.Location = new System.Drawing.Point(623, 38);
+            this.txtAircraft.Name = "txtAircraft";
+            this.txtAircraft.Size = new System.Drawing.Size(138, 26);
+            this.txtAircraft.TabIndex = 8;
             // 
-            // lblTo
+            // cbbTo
             // 
-            this.lblTo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTo.Location = new System.Drawing.Point(251, 31);
-            this.lblTo.Name = "lblTo";
-            this.lblTo.Size = new System.Drawing.Size(75, 26);
-            this.lblTo.TabIndex = 4;
+            this.cbbTo.FormattingEnabled = true;
+            this.cbbTo.Location = new System.Drawing.Point(320, 38);
+            this.cbbTo.Name = "cbbTo";
+            this.cbbTo.Size = new System.Drawing.Size(145, 28);
+            this.cbbTo.TabIndex = 7;
             // 
-            // lblFrom
+            // cbbFrom
             // 
-            this.lblFrom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblFrom.Location = new System.Drawing.Point(81, 31);
-            this.lblFrom.Name = "lblFrom";
-            this.lblFrom.Size = new System.Drawing.Size(74, 26);
-            this.lblFrom.TabIndex = 3;
+            this.cbbFrom.FormattingEnabled = true;
+            this.cbbFrom.Location = new System.Drawing.Point(97, 38);
+            this.cbbFrom.Name = "cbbFrom";
+            this.cbbFrom.Size = new System.Drawing.Size(121, 28);
+            this.cbbFrom.TabIndex = 6;
             // 
             // lbl3
             // 
             this.lbl3.AutoSize = true;
-            this.lbl3.Location = new System.Drawing.Point(381, 37);
+            this.lbl3.Location = new System.Drawing.Point(508, 46);
+            this.lbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(49, 16);
+            this.lbl3.Size = new System.Drawing.Size(64, 20);
             this.lbl3.TabIndex = 2;
             this.lbl3.Text = "Aircraft";
             // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(196, 37);
+            this.lbl2.Location = new System.Drawing.Point(261, 46);
+            this.lbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(25, 16);
+            this.lbl2.Size = new System.Drawing.Size(28, 20);
             this.lbl2.TabIndex = 1;
             this.lbl2.Text = "To";
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(17, 37);
+            this.lbl1.Location = new System.Drawing.Point(23, 46);
+            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(39, 16);
+            this.lbl1.Size = new System.Drawing.Size(48, 20);
             this.lbl1.TabIndex = 0;
             this.lbl1.Text = "From";
             // 
@@ -117,9 +121,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 180);
+            this.label1.Location = new System.Drawing.Point(55, 222);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 15);
+            this.label1.Size = new System.Drawing.Size(39, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Date";
             // 
@@ -127,9 +132,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(254, 180);
+            this.label2.Location = new System.Drawing.Point(339, 222);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 16);
+            this.label2.Size = new System.Drawing.Size(46, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Time";
             // 
@@ -137,73 +143,82 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(449, 179);
+            this.label3.Location = new System.Drawing.Point(599, 220);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 16);
+            this.label3.Size = new System.Drawing.Size(136, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Economy Price $";
             // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(309, 241);
+            this.btnUpdate.Location = new System.Drawing.Point(412, 297);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(88, 26);
+            this.btnUpdate.Size = new System.Drawing.Size(117, 32);
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(546, 241);
+            this.btnCancel.Location = new System.Drawing.Point(728, 297);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 26);
+            this.btnCancel.Size = new System.Drawing.Size(117, 32);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // dateTimePicker1
+            // dtpDate
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(91, 176);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
-            this.dateTimePicker1.TabIndex = 6;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDate.Location = new System.Drawing.Point(121, 217);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(161, 22);
+            this.dtpDate.TabIndex = 6;
+            this.dtpDate.Value = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
             // 
             // txtEconomyPrice
             // 
-            this.txtEconomyPrice.Location = new System.Drawing.Point(576, 176);
+            this.txtEconomyPrice.Location = new System.Drawing.Point(768, 217);
+            this.txtEconomyPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtEconomyPrice.Multiline = true;
             this.txtEconomyPrice.Name = "txtEconomyPrice";
-            this.txtEconomyPrice.Size = new System.Drawing.Size(73, 24);
+            this.txtEconomyPrice.Size = new System.Drawing.Size(96, 29);
             this.txtEconomyPrice.TabIndex = 8;
             // 
-            // dateTimePicker2
+            // dtpTime
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(309, 176);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(88, 20);
-            this.dateTimePicker2.TabIndex = 9;
+            this.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTime.Location = new System.Drawing.Point(412, 217);
+            this.dtpTime.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpTime.Name = "dtpTime";
+            this.dtpTime.Size = new System.Drawing.Size(116, 22);
+            this.dtpTime.TabIndex = 9;
             // 
             // frmScheduleEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 293);
-            this.Controls.Add(this.dateTimePicker2);
+            this.ClientSize = new System.Drawing.Size(928, 361);
+            this.Controls.Add(this.dtpTime);
             this.Controls.Add(this.txtEconomyPrice);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grboxFlightRoute);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmScheduleEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Schedule Edit";
             this.Load += new System.EventHandler(this.frmScheduleEdit_Load);
             this.grboxFlightRoute.ResumeLayout(false);
@@ -216,9 +231,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grboxFlightRoute;
-        private System.Windows.Forms.Label lblAircraft;
-        private System.Windows.Forms.Label lblTo;
-        private System.Windows.Forms.Label lblFrom;
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lbl1;
@@ -227,8 +239,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDate;
         private System.Windows.Forms.TextBox txtEconomyPrice;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpTime;
+        private System.Windows.Forms.ComboBox cbbFrom;
+        private System.Windows.Forms.ComboBox cbbTo;
+        private System.Windows.Forms.TextBox txtAircraft;
     }
 }

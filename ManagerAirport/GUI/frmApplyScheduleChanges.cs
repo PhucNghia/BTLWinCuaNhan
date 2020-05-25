@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ManagerAirport.GUI
 {
-    public partial class Form1 : Form
+    public partial class frmApply : Form
     {
-        public Form1()
+        public frmApply()
         {
             InitializeComponent();
         }
