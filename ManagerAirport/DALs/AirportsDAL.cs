@@ -42,5 +42,31 @@ namespace ManagerAirport.DALs
 
             return airports;
         }
+
+        public String getByIATAcode(String from)
+        {
+            String airportID = null;
+            try
+            {
+                conn.Open();
+                string sql = "select AirportID from Airports where IATAcode = @IATAcode";
+                
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("IATAcode", from);
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    airportID = dr["AirportID"].ToString().Trim();
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show(ex.Message);
+            }
+            return airportID;
+        }
     }
 }

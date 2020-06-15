@@ -77,10 +77,10 @@ namespace ManagerAirport.GUI
             RoutesDTO route = new RoutesDTO();
             route.ArrivalAirportID = airportsFrom.ElementAt(cbbFrom.SelectedIndex).AirportID;
             route.DepartureAirportID = airportsTo.ElementAt(cbbTo.SelectedIndex).AirportID;
-            route.RouteID = scheduleManager.RoutesID;
+            route.RoutesID = scheduleManager.RoutesID;
             
             SchedulesDTO schedule = new SchedulesDTO();
-            schedule.Date = dtpDate.Value.ToString();
+            schedule.Date = dtpDate.Value;
             schedule.Time = dtpTime.Value.ToString();
             schedule.EconomyPrice = float.Parse(txtEconomyPrice.Text);
             schedule.ScheduleID = scheduleManager.SchedulesID;

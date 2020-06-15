@@ -183,8 +183,10 @@ namespace ManagerAirport
 
         private void btnImportChanges_Click(object sender, EventArgs e)
         {
-            frmApply frm = new frmApply();
-            frm.ShowDialog();
+            frmApplyScheduleChanges frmApplySchedule = new frmApplyScheduleChanges();
+            frmApplySchedule.ShowDialog();
+            schedules = schedulesBUL.getList();
+            this.loadData();
         }
     }
 }

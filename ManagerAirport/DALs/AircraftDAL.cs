@@ -27,5 +27,30 @@ namespace ManagerAirport.DALs
                 conn.Close();
             }
         }
+
+        public String getAircraftID(String aircraftID)
+        {
+            String ID = null;
+            try
+            {
+                conn.Open();
+                string sql = "SELECT TOP 1 AircraftID FROM Aircrafts WHERE AircraftID = @id";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("id", aircraftID);
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    ID = dr["AircraftID"].ToString().Trim();
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                conn.Close();
+            }
+
+            return ID;
+        }
     }
 }

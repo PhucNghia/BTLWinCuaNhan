@@ -4,7 +4,7 @@ namespace ManagerAirport.DTOs
 {
     public class RoutesDTO
     {
-        private String routeID;
+        private String routesID;
         private String departureAirportID;
         private string arrivalAirportID;
         private string distance;
@@ -14,16 +14,16 @@ namespace ManagerAirport.DTOs
         {
         }
 
-        public RoutesDTO(string routeID, string departureAirportID, string arrivalAirportID, string distance, string flightTime)
+        public RoutesDTO(string routesID, string departureAirportID, string arrivalAirportID, string distance, string flightTime)
         {
-            this.routeID = routeID;
+            this.routesID = routesID;
             this.departureAirportID = departureAirportID;
             this.arrivalAirportID = arrivalAirportID;
             this.distance = distance;
             this.flightTime = flightTime;
         }
 
-        public string RouteID { get => routeID; set => routeID = value; }
+        public string RoutesID { get => routesID; set => routesID = value; }
         public string DepartureAirportID { get => departureAirportID; set => departureAirportID = value; }
         public string ArrivalAirportID { get => arrivalAirportID; set => arrivalAirportID = value; }
         public string Distance { get => distance; set => distance = value; }

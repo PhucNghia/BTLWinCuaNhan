@@ -30,3 +30,15 @@ D:\other\nhan_xinh_gai\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.cs
 D:\other\nhan_xinh_gai\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.csproj.CoreCompileInputs.cache
 D:\other\nhan_xinh_gai\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.exe
 D:\other\nhan_xinh_gai\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.pdb
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\bin\Debug\ManagerAirport.exe.config
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\bin\Debug\ManagerAirport.exe
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\bin\Debug\ManagerAirport.pdb
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.csprojAssemblyReference.cache
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.GUI.Form1.resources
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.GUI.frmScheduleEdit.resources
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.frmMain.resources
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.Properties.Resources.resources
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.csproj.GenerateResource.cache
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.csproj.CoreCompileInputs.cache
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.exe
+D:\other\nhan_xinh_gai\ManagerAirport2\ManagerAirport\ManagerAirport\ManagerAirport\obj\Debug\ManagerAirport.pdb

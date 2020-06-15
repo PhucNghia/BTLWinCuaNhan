@@ -29,7 +29,7 @@ create table Airports
 
 create table Routes
 (
-	RouteID char(10) primary key not null,
+	RoutesID char(10) primary key not null,
 	DepartureAirportID char(10) not null,
 	ArrivalAirportID char(10) not null,
 	Distance float,
@@ -44,12 +44,12 @@ create table Schedules
 	DateFlight date,
 	TimeFlight time,
 	AircraftID char(10),
-	RouteID char(10),
+	RoutesID char(10),
 	FlightNumber nchar(20),
 	EconomyPrice money,
 	Confirmed int,
 	foreign key(AircraftID) references Aircrafts(AircraftID),
-	foreign key(RouteID) references Routes(RouteID)
+	foreign key(RoutesID) references Routes(RoutesID)
 )
 
 create table Offices
@@ -174,7 +174,8 @@ select * from Airports
 select * from Routes
 select * from Schedules 
 
-select * from Schedules
+select * from Schedules where DateFlight = '2019-11-07'
+
 select * from Routes
 select * from Aircrafts
 select * from Airports
@@ -193,8 +194,16 @@ drop table Roles
 
 select DateFlight as 'Date', TimeFlight, fromAirport.IATAcode, toAirport.IATAcode, Aircrafts.AircraftID, EconomyPrice as 'Economy Price',
 (EconomyPrice*35/100)+EconomyPrice as 'Bussiness Price', ((EconomyPrice*35/100)+EconomyPrice)*30/100+(EconomyPrice*35/100+EconomyPrice) as 'First class Price'  from Schedules 
-join Routes on Schedules.RouteID=Routes.RouteID
+join Routes on Schedules.RoutesID=Routes.RoutesID
 join Airports as fromAirport on Routes.ArrivalAirportID=fromAirport.AirportID
 join Airports as toAirport on Routes.DepartureAirportID=toAirport.AirportID
 join Aircrafts on Schedules.AircraftID=Aircrafts.AircraftID
-ORDER BY 'Date' Desc
+ORDER BY DateFlight Desc
+
+SELECT TOP 1 * FROM schedules where FlightNumber = 100 and DateFlight = '2019-05-26'
+
+select * from Airports
+SELECT  * FROM Routes 
+JOIN Airports AS fromAirport ON Routes.DepartureAirportID = fromAirport.AirportID 
+JOIN Airports AS toAirport ON Routes.ArrivalAirportID = toAirport.AirportID 
+WHERE fromAirport.IATAcode = 'HAN' and toAirport.IATAcode = 'SIN';
